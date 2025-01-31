@@ -1,0 +1,141 @@
+.principal {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.img_bio {
+  width: 21.18vw;
+  position: relative;
+  bottom: 20px;
+  right: 280px;
+  margin-bottom: 0px;
+  margin-right: 0px;
+}
+
+.div_texto {
+  margin-bottom: 100px;
+  margin-right: 150px;
+  font-family: "Poppins";
+  font-weight: 500;
+  color: #a51c18;
+  position: relative;
+  top: 50px;
+}
+
+.texto_principal {
+  margin-bottom: 60px;
+  position: relative;
+  font-size: 84px;
+  left: 20px;
+}
+
+.texto_subtitulo {
+  width: 35vw;
+  font-size: 24px;
+  position: relative;
+  left: 22px;
+}
+
+.img_presente {
+  /* ajudou na responsividade com a imagem*/
+  width: 35vw;
+  height: auto;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+@media (max-width: 768px) {
+
+  .img_bio {
+    width: 60vw;
+    margin-bottom: 100px;
+    margin-right: 150px;
+    bottom: 0px;
+    right: 0px;
+  }
+
+  .div_texto {
+    color: #a51c18;
+    margin-bottom: 100px;
+    margin-right: 150px;
+    font-family: "Poppins";
+    font-weight: 500;
+    right: 0px;
+    top: 0px;
+  }
+
+  .texto_principal {
+    margin-bottom: 60px;
+    position: relative;
+    bottom: 50px;
+    font-size: 84px;
+  }
+
+  .texto_subtitulo {
+    width: 35vw;
+    position: relative;
+    bottom: 85px;
+    left: 25px;
+    font-size: 24px;
+  }
+
+  .img_presente {
+    content: url("/imgs/mario_presente2.png");
+    /* ajudou na responsividade com a imagem*/
+    width: 100%;
+    width: 55vw;
+    height: auto;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .img_bio {
+    bottom: 0px;
+    right: 0px;
+    width: 60vw;
+    margin-bottom: 100px;
+    margin-right: 150px;
+  }
+
+  .div_texto {
+    margin-bottom: 100px;
+    margin-right: 150px;
+    font-family: "Poppins";
+    font-weight: 500;
+    right: 0px;
+    top: 0px;
+  }
+
+  .texto_principal {
+    margin-bottom: 60px;
+    position: relative;
+    bottom: 60px;
+    left: 22px;
+    font-size: 55px;
+  }
+
+  .texto_subtitulo {
+    width: 35vw;
+    position: relative;
+    bottom: 100px;
+    left: 24px;
+  }
+
+  .img_presente {
+    content: url("/imgs/mario_presente2.png");
+    /* ajudou na responsividade com a imagem*/
+    width: 100%;
+    width: 85vw;
+    height: auto;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+}

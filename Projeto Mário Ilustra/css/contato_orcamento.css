@@ -1,0 +1,105 @@
+body {
+  background-color: #f7e5ce;
+  font-family: "Foolish Talk";
+  width: 100%;
+}
+
+.ul_navegacao {
+  background-color: #a51c18;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.sanduiche_e_sobre {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.carrinho_boneco_lupa {
+  display: flex;
+  gap: 10px;
+}
+
+.buscar {
+  display: none;
+  background-color: #f7e5ce40;
+  color: #f7e5ce;
+  font-family: "Poppins";
+  width: 323px;
+  height: 37px;
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  outline: none;
+}
+.buscar::placeholder {
+  background: url("/imgs/lupa.png") no-repeat right center;
+  background-size: 18px;
+  color: #f7e5ce;
+  font-family: "Poppins";
+  font-size: 16px;
+  padding: 7px;
+}
+
+@media (max-width: 768px) {
+  .logo_arm {
+    display: none;
+  }
+
+  .lupa {
+    display: none;
+  }
+
+  .img_sanduiche {
+    width: 24px;
+  }
+
+  .buscar {
+    display: flex;
+    width: 38rem;
+    height: 34px;
+    font-size: 14px;
+  }
+
+  .carrinho_boneco_lupa img {
+    width: 30px;
+  }
+
+  .img_sanduiche {
+    width: 30px;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .logo_arm {
+    display: none;
+  }
+
+  .lupa {
+    display: none;
+  }
+
+  .img_sanduiche {
+    width: 24px;
+  }
+
+  .buscar {
+    display: flex;
+    width: 22.5rem;
+    height: 34px;
+    font-size: 14px;
+  }
+
+  .carrinho_boneco_lupa img {
+    width: 24px;
+  }
+
+  .img_sanduiche {
+    width: 24px;
+  }
+}

@@ -1,0 +1,185 @@
+.div_principal {
+  display: grid;
+  grid-template-columns: 7fr 3fr;
+  align-items: flex-start;
+  gap: 20px;
+  overflow-x: hidden; /* Previne rolagem horizontal */
+  width: 100%;
+}
+
+.div_sub {
+  display: flex;
+  grid-column: 1;
+  align-items: flex-start;
+  justify-items: center;
+  flex-direction: column;
+}
+
+.p_texto {
+  color: #a51c18;
+  max-width: 70%;
+  margin-left: 30px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Poppins";
+}
+
+label {
+  color: #a51c18;
+  font-weight: bold;
+  width: 62px;
+  font-family: "Poppins";
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 10px;
+}
+
+input,
+textarea {
+  font-family: "Poppins";
+  outline: none;
+  border: none;
+  overflow-y: scroll; /* Habilita a rolagem vertical */
+  scrollbar-width: none; /*Remove a barra */
+  resize: none; /* Remove a opção de redimensionamento */
+  height: 40px;
+  border-radius: 7px;
+  width: 265px;
+}
+
+.label_nome_sobrenome input {
+  margin: 10px;
+}
+
+.nome_sobrenome {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.label_email_sobre input,
+textarea {
+  display: flex;
+  margin: 10px;
+  width: 550px;
+}
+
+textarea {
+  height: 110px;
+}
+
+.formulario {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  margin: 20px;
+  margin-bottom: 350px;
+}
+
+.botao_enviar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+  cursor: pointer;
+  background-color: #a51c18;
+  color: #f7e5ce;
+  font-size: 20px;
+  border: none;
+  padding: 5px;
+  width: 130px;
+  font-family: "Poppins";
+}
+
+.div_calca {
+  grid-column: 2;
+  grid-row: 1 / span 3;
+  position: sticky;
+  top: 0;
+  align-self: start;
+  width: 100%;
+  overflow: hidden;
+}
+
+.img_calca {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Adicione estas media queries no contato.css e orcamento.css */
+
+/* Para tablets */
+@media (max-width: 768px) {
+  .div_principal {
+    grid-template-columns: 1fr; /* Muda para uma coluna */
+    padding: 20px;
+  }
+
+  .div_calca {
+    display: none; /* Remove a imagem */
+  }
+
+  .div_sub {
+    grid-column: 1;
+    align-items: center; /* Centraliza os elementos */
+  }
+
+  .p_texto {
+    max-width: 90%;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .formulario {
+    align-items: center;
+    margin: 20px 0;
+    width: 100%;
+  }
+
+  .nome_sobrenome {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .label_nome_sobrenome input {
+    width: calc(100% - 20px); /* Ajusta a largura considerando as margens */
+  }
+
+  .label_email_sobre input,
+  textarea {
+    width: calc(100% - 20px);
+  }
+}
+
+/* Para celulares */
+@media (max-width: 480px) {
+  .div_principal {
+    padding: 10px;
+  }
+
+  .p_texto {
+    font-size: 16px;
+  }
+
+  .nome_sobrenome {
+    width: 100%;
+  }
+
+  .label_nome_sobrenome,
+  .label_email_sobre {
+    width: 100%;
+  }
+
+  input,
+  textarea {
+    width: calc(100% - 20px);
+  }
+
+  .botao_enviar {
+    width: 100%;
+    margin-left: 0;
+  }
+}

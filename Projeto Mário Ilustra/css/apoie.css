@@ -1,0 +1,197 @@
+.principal {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.img_apoie {  
+  max-width: 100%;
+  width: 10 1vw;
+  position: relative;
+  top: 10px;
+  margin-bottom: 0px;
+  margin-right: 0px;
+}
+
+.linha_vermelha {
+  width: 96.35vw;
+  position: relative;
+  top: 30px;
+}
+
+.div_texto {
+  margin-bottom: 100px;
+  margin-right: 150px;
+  font-family: "Poppins";
+  font-weight: 500;
+  color: #a51c18;
+  position: relative;
+  top: 78px;
+}
+
+.texto_principal {
+  margin-bottom: 60px;
+  position: relative;
+  font-size: 84px;
+  left: 20px;
+}
+
+.texto_subtitulo {
+  width: 35vw;
+  font-size: 24px;
+  position: relative;
+  left: 22px;
+}
+
+.botao_apoiar {
+  border: none;
+  cursor: pointer;
+  background-color: #a51c18;
+  width: 12.18vw;
+  height: 8vh;
+  color: #f7e5ce;
+  padding: 10px;
+  font-weight: 700;
+  font-size: 40px;
+  position: relative;
+  left: 22px;
+  top: 40px;
+}
+
+/* colocar linha, teste */
+/* .botao_apoiar:hover {
+    text-decoration: underline;
+} */
+
+.img_coracao {
+  /* ajudou na responsividade com a imagem*/
+  width: 28vw;
+  height: auto;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+/* @media (max-width: 1024px) and (min-width: 768px) {
+    .botao_apoiar {
+      width: 200px; 
+      font-size: 32px; 
+    }
+
+} */
+
+@media (max-width: 768px) {
+  .img_apoie {
+    width: 31vw;
+    margin-bottom: 100px;
+    margin-right: 150px;
+    bottom: 0px;
+    right: 0px;
+  }
+
+  .linha_vermelha {
+    display: none;
+  }
+
+  .div_texto {
+    margin-bottom: 100px;
+    margin-right: 150px;
+    font-family: "Poppins";
+    font-weight: 500;
+    right: 0px;
+    top: 0px;
+  }
+
+  .texto_principal {
+    margin-bottom: 60px;
+    position: relative;
+    font-size: 84px;
+    left: 100px;
+  }
+
+  .texto_subtitulo {
+    width: 35vw;
+    position: relative;
+    left: 220px;
+    bottom: 30px;
+    font-size: 24px;
+  }
+
+  .botao_apoiar {
+    width: 160px;
+    height: 50px;
+    font-weight: 700;
+    font-size: 30px;
+    left: 220px;
+    top: 0px;
+  }
+
+  .img_coracao {
+    content: url("/imgs/mario_coracao2.png");
+    /* ajudou na responsividade com a imagem*/
+    width: 60vw;
+    height: auto;
+    position: absolute;
+    right: 310px;
+    bottom: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .img_apoie {
+    width: 51vw;
+    margin-bottom: 100px;
+    margin-right: 150px;
+    bottom: 0px;
+    right: 0px;
+  }
+  
+  .linha_vermelha {
+    display: none;
+  }
+
+  .div_texto {
+    margin-bottom: 100px;
+    margin-right: 150px;
+    font-family: "Poppins";
+    font-weight: 500;
+    right: 0px;
+    top: 0px;
+  }
+
+  .texto_principal {
+    margin-bottom: 60px;
+    position: relative;
+    font-size: 55px;
+    left: 100px;
+  }
+
+  .texto_subtitulo {
+    width: 35vw;
+    position: relative;
+    left: 220px;
+    bottom: 30px;
+    font-size: 24px;
+  }
+
+  .botao_apoiar {
+    width: 160px;
+    height: 50px;
+    font-weight: 700;
+    font-size: 30px;
+    left: 220px;
+    top: 0px;
+  }
+
+  .img_coracao {
+    content: url("/imgs/mario_coracao2.png");
+    /* ajudou na responsividade com a imagem*/
+    width: 100%;
+    width: 65vw;
+    height: 55vh;
+    position: absolute;
+    right: 170px;
+    bottom: 0;
+  }
+}

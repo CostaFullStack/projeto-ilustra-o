@@ -1,0 +1,353 @@
+/* bg-color:  #f7e5ce */
+/* navegador:  #a51c18 */
+
+body {
+  background-color: #f7e5ce;
+}
+
+#header {
+  background-color: #a51c18;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  padding: 10px;
+  z-index: 999;
+  width: 100%;
+}
+
+#navegador {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 6vh;
+}
+
+/* manipulando as divs do navegador */
+.img-sanduiche-input-div {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 15px;
+}
+
+.img_assinatura-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input-navegador {
+  border: none;
+  outline: none;
+  background-color: #f7e5ce40;
+  color: #f7e5ce;
+  border-radius: 3px;
+  font-family: "Poppins", sans-serif;
+  width: 16vw;
+  height: 4vh;
+  padding: 10px;
+}
+
+.input-navegador::placeholder {
+  background: url("/imgs/lupa_dois.png") no-repeat right center;
+  background-size: 18px;
+  color: #f7e5ce;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 10px;
+}
+
+.img-assinatura-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-carrinho-boneco {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+#main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/*  manipulando a div content */
+#content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* troquei para width ao inves de max */
+  width: 100%;
+}
+
+/* manipulando a section banner */
+#banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* troquei para width ao inves de max */
+  width: 100%;
+  flex-direction: column;
+}
+
+/* manipulando a div img-pe-calca */
+#img-pe-calca-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+/* manipulando a div img-circulo */
+#img-circulo-div {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+/* manipulando as imgs dentro das div's do navegador */
+
+.img-sanduiche {
+  cursor: pointer;
+  width: 2.5vw;
+  height: 4.34vh;
+}
+
+.img-assinatura {
+  width: 5.36vw;
+  height: 6.56vh;
+}
+
+.img-carrinho {
+  cursor: pointer;
+  width: 2.6vw;
+  height: 5.92vh;
+}
+
+.img-boneco {
+  cursor: pointer;
+  width: 2.39vw;
+  height: 5.39vh;
+}
+
+/* VER PQ ESTOU PRECISANDO COLOCAR WIDTH 100% AQUI, SENDO QUE NA SECTION E NA DIV DELE JÁ ESTÁ! */
+.img-pe-calca {
+  width: 100%;
+  height: 80vh;
+}
+
+.img-circulo {
+  height: 20.42vh;
+}
+
+/* ======================================================= PARTE DA LOJA =======================================================  */
+
+#store {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 100%;
+}
+
+#store-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* deixei 90% para diminuir a distância */
+  width: 90%;
+}
+
+#img-circulo-div2 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+
+.select-div {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  max-width: 100%;
+}
+
+#select-option {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+}
+
+#retangulo-triangulo-div {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+  max-width: 100%;
+}
+
+#card-linha {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+#linha-vermelha-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+}
+
+#card-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  flex-direction: column;
+  padding: 50px;
+}
+
+.img-circulo2 {
+  height: 20.42vh;
+}
+
+.tudo {
+  border: none;
+  outline: none;
+  width: 15.2vw;
+  height: 5.3vh;
+  color: #f7e5ce;
+  background-color: #b94e45;
+  font-family: "Poppins", serif;
+  font-size: 32px;
+  text-align: center;
+  font-weight: 500;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.retangulo {
+  cursor: pointer;
+  width: 2.9vw;
+  height: 5.29vh;
+  position: relative;
+  z-index: 1;
+}
+
+.triangulo {
+  position: absolute;
+  left: 18px;
+  z-index: 2;
+}
+
+.linha-vermelha {
+  width: 95vw;
+}
+
+@media (max-width: 768px) {
+  #navegador {
+    height: 5vh;
+  }
+
+  .img-sanduiche {
+    cursor: pointer;
+    width: 6vw;
+    height: 4vh;
+  }
+
+  .input-navegador {
+    width: 76vw;
+    height: 4vh;
+  }
+
+  .img-assinatura {
+    display: none;
+  }
+
+  .img-carrinho {
+    width: 5vw;
+    height: 5vh;
+  }
+
+  .img-boneco {
+    width: 5vw;
+    height: 5vh;
+  }
+
+  .img-pe-calca {
+    width: 100%;
+    height: 42vh;
+  }
+
+  #img-circulo-div {
+    justify-content: center;
+  }
+
+  .img-circulo {
+    width: 65vw;
+    height: 24vh;
+  }
+}
+
+@media (max-width: 480px) {
+  #navegador {
+    height: 5vh;
+  }
+
+  .img-sanduiche {
+    cursor: pointer;
+    width: 7vw;
+    height: 3vh;
+  }
+
+  .input-navegador {
+    width: 67vw;
+    height: 4vh;
+  }
+
+  .img-assinatura {
+    display: none;
+  }
+
+  .img-carrinho {
+    width: 7vw;
+    height: 5vh;
+  }
+
+  .img-boneco {
+    width: 7vw;
+    height: 5vh;
+  }
+
+  .img-pe-calca {
+    width: 100%;
+    height: 42vh;
+  }
+
+  #img-circulo-div {
+    justify-content: center;
+  }
+
+  /* manipulando a img dentro da div img-circulo-div */
+
+  .img-circulo {
+    width: 85vw;
+    height: 24vh;
+  }
+}
